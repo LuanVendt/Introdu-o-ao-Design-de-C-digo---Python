@@ -9,8 +9,9 @@ class MockRequest:
         self.json = body
 
 
-class MockDriverHandler(DriverHandlerInterface):
-    def standard_derivation(self, numbers: List[float]) -> float:
+class MockDriverHandler:
+    @staticmethod
+    def standard_derivation(numbers: List[float]) -> float:
         return 3
 
 
